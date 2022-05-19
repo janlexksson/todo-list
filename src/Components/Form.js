@@ -1,6 +1,7 @@
 import React from "react";
-
+//Here I write JS code and function. Functions named Handler in the ens!
 const Form = ({setInputText,todos,setTodos, inputText, setStatus}) => {
+  // e == event
     const inputTextHandler = (e) => {
         console.log(e.target.value);
         setInputText(e.target.value);
@@ -15,6 +16,7 @@ const Form = ({setInputText,todos,setTodos, inputText, setStatus}) => {
     }
 
     return (
+      //React whants class + Name!- Form for input todos on console
 <form>
       <input value={inputText} onChange={inputTextHandler} type="text" className="todo-input" />
       <button onClick={submitTodoHandler} className="todo-button" type="submit">

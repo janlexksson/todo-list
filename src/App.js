@@ -1,10 +1,11 @@
+//Importing components
 import React, {useState, useEffect} from 'react';
 import './App.css';
 import Form from './Components/Form';
 import TodoList from './Components/Todolist';
 
 function App() {
-
+  //Input to form value + function so i can chang evalue
   const[inputText, setInputText] = useState("");
   const[todos, setTodos] = useState([]);
   const[status, setStatus] = useState("all");
@@ -28,6 +29,7 @@ function App() {
     }
   };
 
+//lokal storage as instycted from video
   const saveLocalTodos = () => {
     localStorage.setItem("todos",  JSON.stringify(todos));
   };
@@ -44,6 +46,7 @@ function App() {
      <header>
       <h1>Boba's Todo List</h1>
     </header>
+    {/* Imported from form.js */}
     <Form 
     inputText={inputText} 
     todos={todos} 
