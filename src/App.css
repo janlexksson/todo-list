@@ -25,7 +25,7 @@ form button {
   padding: 0.5rem;
   font-size: 2rem;
   border: none;
-  background: white;
+  
 }
 form button {
   color: #ff6f47;
@@ -52,7 +52,7 @@ form button:hover {
   margin: 0.5rem;
   background: white;
   font-size: 1.5rem;
-  color: black;
+  color: rgb(0, 0, 0);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -118,7 +118,7 @@ select {
   color: #ff6f47;
   font-family: "Poppins", sans-serif;
   cursor: pointer;
-  width: 12rem;
+  width: 14rem;
 }
 /* Arrow */
 .select::after {
